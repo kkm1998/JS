@@ -42,15 +42,12 @@ function contrastFilter(amount = 30) {
         const b = canvasData.data[i + 2]
 
         const avg = (r + g + b) / 3
-        if (avg > 127) {
-            canvasData.data[i] += amount
-            canvasData.data[i + 1] += amount
-            canvasData.data[i + 2] += amount
-        } else {
-            canvasData.data[i] -= amount
-            canvasData.data[i + 1] -= amount
-            canvasData.data[i + 2] -= amount
-        }
+        if (avg <= 127) {
+            amount = -amount
+        } 
+        canvasData.data[i] += amount
+        canvasData.data[i + 1] += amount
+        canvasData.data[i + 2] += amount
     }
     ctx.putImageData(canvasData, 0, 0)
     console.log(canvasData.data)
