@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum kit</title>
+</head>
+
+<body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <audio id="boom" src="sounds/boom.wav" controls></audio>
+    <audio id="clap" src="sounds/clap.wav" controls></audio>
+    <audio id="hihat" src="sounds/hihat.wav" controls></audio>
+    <audio id="kick" src="sounds/kick.wav" controls></audio>
+    <audio id="openhat" src="sounds/openhat.wav" controls></audio>
+    <audio id="ride" src="sounds/ride.wav" controls></audio>
+    <audio id="snare" src="sounds/snare.wav" controls></audio>
+    <audio id="tink" src="sounds/tink.wav" controls></audio>
+    <audio id="tom" src="sounds/tom.wav" controls></audio>
+
+    <div class="kontener">
+        <div class="przycisk" onclick="playAudio('sounds/boom.wav')">
+            <a>boom</a><b>Q</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/clap.wav')">
+            <a>clap</a><b>W</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/hihat.wav')">
+            <a>hihat</a><b>E</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/kick.wav')">
+            <a>kick</a><b>R</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/openhat.wav')">
+            <a>openhat</a><b>T</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/ride.wav')">
+            <a>ride</a><b>Y</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/snare.wav')">
+            <a>snare</a><b>U</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/tink.wav')">
+            <a>tink</a><b>I</b>
+        </div>
+        <div class="przycisk" onclick="playAudio('sounds/tom.wav')">
+            <a>tom</a><b>O</b>
+        </div>
+
+
+    </div>
+    <div class="kontener2">
+        <div class="kanały">
+            <button id="channel1Rec">Nagraj kanał 1</button>
+            <button id="channel2Rec">Nagraj kanał 2</button>
+            <button id="channel3Rec">Nagraj kanał 3</button>
+            <button id="channel4Rec">Nagraj kanał 4</button>
+        </div>
+        <div class="kanały">
+            <button id="channel1Play">Odtwórz kanał 1</button>
+            <button id="channel2Play">Odtwórz kanał 2</button>
+            <button id="channel3Play">Odtwórz kanał 3</button>
+            <button id="channel4Play">Odtwórz kanał 4</button>
+        </div>
+        <div class="kanały">
+            <button id="channel1Del">Zresetuj kanał 1</button>
+            <button id="channel2Del">Zresetuj kanał 2</button>
+            <button id="channel3Del">Zresetuj kanał 3</button>
+            <button id="channel4Del">Zresetuj kanał 4</button>
+        </div>
+    </div>
+    <script src="drumkit.js"></script>
+
+</body>
+
+</html>
