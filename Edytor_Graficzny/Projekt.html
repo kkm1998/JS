@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="główny">
+            <button class="przyciskMenu">Menu</button>
+        <div class="menu">
+            <ul>
+                <li>
+                    <p>Wybierz kolor</p>
+                </li>
+                <li>
+                    <input id="kolory" type="color" value="#00cccc"> 
+                </li>
+                <li>
+                    <p>Wybierz Rozmiar</p>
+                </li>
+                <li>
+                    <input type="range" min="1" max="50" value="5" step="1" id="rozmiar">
+                </li>
+                <li>
+                    <p>Wybierz kształt</p>
+                <li>
+                    <button id="butt"  class="kształt">butt</button>
+                    <button id="square" class="kształt">square</button>
+                    <button id="round" class="kształt">round</button>
+                </li>
+                <li>
+                    <p>Kontrast </p>
+                </li>
+                <li>
+                    <input type="range" min="1" max="300" step="1" id="kontrast">
+                </li>
+                <li>
+                    <p>Jasność</p>
+                </li>
+                <li>
+                    <input type="range" min="1" max="300"  step="1" id="jasność">
+                </li>
+                <li>
+                    <p>Nasycenie</p>
+                </li>
+                <li>
+                    <input type="range" min="1" max="300" step="1" id="nasycenie"> <br>
+                </li>
+                <li>
+                    <button id="Wyczyść"class="czyszczenie">Wyczyść</button>
+                </li>
+                <li>
+                    <button id="otworzPlik"class="czyszczenie">Otwórz</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <canvas id=canvas width="950" height="800"></canvas>
+
+    <input id="plik" type="file" accept="image/*" />
+    <script src="main.js"></script>
+    <script src="Photoshop.js"></script>
+</body>
+
+</html>
