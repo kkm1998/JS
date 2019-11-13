@@ -20,54 +20,44 @@ document.querySelector("#channel4Play")
     .addEventListener("click", playChannel4)
 
 document.querySelector('#channel1Rec')
-    .addEventListener('click', check1)
+    .addEventListener('click', () => {
+        suma = 1
+    })
 document.querySelector('#channel2Rec')
-    .addEventListener('click', check2)
+    .addEventListener('click', () => {
+        suma = 2
+    })
 document.querySelector('#channel3Rec')
-    .addEventListener('click', check3)
+    .addEventListener('click', () => {
+        suma = 3
+    })
 document.querySelector('#channel4Rec')
-    .addEventListener('click', check4)
+    .addEventListener('click', () => {
+        suma = 4
+    })
 
 document.querySelector('#channel1Del')
-    .addEventListener('click', del1)
+    .addEventListener('click', () => {
+        channel.length = 0;
+    })
 document.querySelector('#channel2Del')
-    .addEventListener('click', del2)
+    .addEventListener('click', () => {
+        channel2.length = 0;
+    })
 document.querySelector('#channel3Del')
-    .addEventListener('click', del3)
+    .addEventListener('click', () => {
+        channel3.length = 0;
+    })
 document.querySelector('#channel4Del')
-    .addEventListener('click', del4)  
+    .addEventListener('click', () => {
+        channel4.length = 0;
+    })
 
-function del1(){
-    channel.length=0;
-}
-function del2(){
-    channel2.length=0;
-}
-function del3(){
-    channel3.length=0;
-}
-function del4(){
-    channel4.length=0;
-}
 
 function playAudio(url) {
     var a = new Audio(url);
     a.play();
 }
-
-function check1() {
-    suma = 1;
-}
-function check2() {
-    suma = 2;
-}
-function check3() {
-    suma = 3;
-}
-function check4() {
-    suma = 4;
-}
-
 let suma = 0;
 let channelStart = 0;
 
@@ -93,30 +83,37 @@ function playChannel1() {
         setTimeout(() => {
             playSound(sounds[el.sound])
         }, el.time);
+        console.log(channel)
     })
 }
+
 function playChannel2() {
 
     channel2.forEach((el) => {
         setTimeout(() => {
             playSound(sounds[el.sound])
         }, el.time);
+        console.log(channel2)
     })
 
 }
+
 function playChannel3() {
     channel3.forEach((el) => {
         setTimeout(() => {
             playSound(sounds[el.sound])
         }, el.time);
+        console.log(channel3)
     })
 }
+
 function playChannel4() {
 
     channel4.forEach((el) => {
         setTimeout(() => {
             playSound(sounds[el.sound])
         }, el.time);
+        console.log(channel4)
     })
 
 }
@@ -144,7 +141,7 @@ function playSound(id) {
     audioTag.currentTime = 0
     audioTag.play()
 }
+
 function recChannel() {
     channelStart = Date.now()
 }
-
