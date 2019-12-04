@@ -4,16 +4,13 @@ body {
     overflow: hidden;
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
-
 .główny {
     height: 20px;
     width: 100%;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
-    
 }
-
 .przyciskMenu {
     border: 0;
     background-color: pink;
@@ -30,7 +27,6 @@ body {
     background-color: lightblue;
 }
 .menu {
-
     justify-content: flex-end;
     display: flex;
     box-sizing: border-box;
@@ -42,9 +38,7 @@ body {
     background: radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(233,148,194,1) 100%);
     transform: translateY(-150%);
     transition: 0.3s transform ease-in-out;
-   
 }
-
 .menu ul {
     padding: 10px;
     list-style-type: none;
@@ -53,7 +47,6 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
 }
-
 .menu li {
     margin-top: 10px;
     border-radius: 5px;
@@ -61,47 +54,46 @@ body {
     height: 30px;
     align-items: center;
     display: flex;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
-
 .przyciskMenu:focus~.menu, .menu:hover {
     transform: translateY(0);
 }
-
 canvas {
     display: flex;
     border: 1px solid black;
     margin: 50px 50px 0px;
     position: absolute;
 }
-
 #plik {
     visibility: hidden;
 }
-
 P {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 19px;
     letter-spacing: -0.6px;
     word-spacing: 2px;
-    
+    width: 100%;
+    text-align: center;
 }
 button{
     border: none;
     outline: none;
     border-radius: 10px;
+    
 }
 button.czyszczenie:hover,button.kształt:hover{
     opacity: 0.5;
     background-color: pink;
 }
-
 button.czyszczenie {
     width: 100%;
+    background-color: wheat;
 }
 button.kształt {
     width: 33%;
     margin-right: 5px;
+    background-color: wheat;
 }
 input{
     width: 100%;

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Narzędzie do rysowania</title>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="główny">
+        <button class="przyciskMenu">Menu</button>
+        <div class="menu">
+            <ul>
+                <li>
+                    <p>Wybierz kolor</p>
+                </li>
+                <li>
+                    <input id="kolory" type="color" value="#ff33ff">
+                </li>
+                <li>
+                    <p>Wybierz Rozmiar</p>
+                </li>
+                <li>
+                    <input type="range" min="0" max="100" value="10" step="1" id="rozmiar">(<span id="RozmiarPędzla">10</span>)
+                </li>
+                <li>
+                    <p>Wybierz kształt</p>
+                <li>
+                    <button id="butt" class="kształt" value="butt">butt</button>
+                    <button id="square" class="kształt" value="square">square</button>
+                    <button id="round" class="kształt" value="round">round</button>
+                </li>
+                <li>
+                    <p>Kontrast </p>
+                </li>
+                <li>
+                    <input type="range" min="-255" max="255" step="1" id="przyciskKontrast">(<span id="RozmiarKontrastu">0</span>)<br>
+                </li>
+                <!-- <li><input type="range" min="0" max="255" step="1" id="kontrast">q</li> -->
+                <li>
+                    <p>Jasność</p>
+                </li>
+                <li>
+                    <input type="range" min="-100" max="100" step="1" id="przyciskJasność">(<span id="RozmiarJasności">0</span>)<br>
+                </li>
+                <!-- <li><input type="range" min="0" max="255" step="1"  id="jasność">q</li> -->
+                <li>
+                    <p>Nasyceniee</p>
+                </li>
+                <li>
+                    <input type="range" min="-5" max="1.99" value="0" step="0.01" id="przyciskNasycenie">(<span id="RozmiarNasycenia">0</span>)<br>
+                </li>
+
+                <!-- <li><input type="range" min="-100" max="300" step="1" id="nasycenie">q</li> -->
+                <li>
+                    <button id="Wyczyść" class="czyszczenie">Całkowita Destrukcja</button>
+                </li>
+                <li>
+                    <button id="otworzPlik" class="czyszczenie">Otwórz</button>
+                </li>
+                <li>
+                    <button id="Wypełnij" class="czyszczenie">Wypełnij tło </button>
+                </li>
+                <li>
+                    <p>Rozmiar Canvas</p>
+                </li>
+                <li>
+                    <input type="range" max="1000" id="wymiarY"  value="800">(<span id="RozmiarY">800</span>)
+                </li>
+                <li>
+                    <input type="range"max="950" id="wymiarX"  value="950">(<span id="RozmiarX">950</span>)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <canvas id=canvas> </canvas>
+
+    <input id="plik" type="file" accept="image/*" />
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="Photoshop.js"></script>
+    <script type="text/javascript" src="Paint.js"></script>
+</body>
+
+</html>
