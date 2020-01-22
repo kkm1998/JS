@@ -1,0 +1,182 @@
+body {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.conteiner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#Pin {
+    margin-bottom: 50px;
+}
+
+#Not-Pin, #Pin {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    padding: 10px 0 10px;
+    min-height: 200px;
+}
+
+#Pin {
+    border-style: none;
+}
+
+.Note {
+    /* padding-top: 20px;
+    background: white;
+    min-width: 100px;
+    min-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #34b339;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 14px;
+    background-color: white;
+    transform: rotate(7deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 13px 30px 13px 30px;
+    width: 240px;
+}
+
+.Bar {
+    height: 30px;
+    background: #34b339;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Footer {
+    height: 30px;
+    width: 100%;
+}
+
+#Date {
+    font-size: 18 px;
+    margin-left: 5px;
+}
+
+.Title {
+    padding: 13px 10px 0 16px;
+    box-sizing: border-box;
+    min-height: 10px;
+    max-height: 40px;
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Text {
+    padding: 3px 10px 0px;
+    box-sizing: border-box;
+    min-width: 180px;
+    max-width: 250px;
+    min-height: 200px;
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: Georgia;
+}
+
+textarea {
+    outline: 0;
+    resize: none;
+    overflow: hidden;
+}
+
+/* .bar:hover {
+    cursor: pointer;
+    background: #4bd0b5;
+}
+
+.sticker:hover {
+    z-index: 1;
+} */
+
+.addNoteBtn {
+    background: radial-gradient(circle, rgba(238, 174, 174, 1) 0%, rgba(167, 17, 98, 1) 100%);
+    background: rgb(238, 174, 174);
+    margin-left: 45%;
+    border-width: 5px;
+    border-style: outset;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 50px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    outline: none;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Trebuchet MS';
+    display: inline-block;
+}
+
+.addNoteBtn:hover {
+    opacity: 0.5;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.deleteButton, .saveButton, .colorButton, .pinButton, .colorBarButton {
+    border: none;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    outline: none;
+    float: left;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+.colorButton, .colorBarButton {
+    background-color: pink;
+}
+
+.colorBarButton {
+    margin-left: 130px;
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+.saveButton {
+    background-color: green;
+}
+
+.pinButton {
+    background-color: yellow;
+}
+
+.deleteButton:hover {
+    background-color: #9933ff;
+}
+
+.saveButton:hover {
+    background-color: #003300;
+}
+
+.pinButton:hover {
+    background-color: #cc7a00;
+}
+
+.colorButton:hover, .colorBarButton:hover {
+    transform: rotate(45deg);
+    background-color: mediumvioletred;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
