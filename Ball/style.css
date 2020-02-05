@@ -1,0 +1,38 @@
+body {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.ball {
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+}
+
+.board {
+  width: 800px;
+  height: 800px;
+  border-style: solid;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 5px;
+}
+
+.hole {
+  border-radius: 50%;
+  z-index: -2;
+  position: absolute;
+  background: green;
+}
+
+h1{
+  width: 800px;
+  height: 40px;
+  position: absolute;
+  border-style: solid;
+  left: 0;
+  margin-top: 800px;
+  margin-left: 5px;
+  text-align: center;
+}
